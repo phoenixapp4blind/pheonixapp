@@ -20,7 +20,6 @@ export class CoursesPage implements OnInit, OnDestroy {
   yesorno: any;
   CoursesList = [];
   Course = [];
-  studentData: any;
   waitCheck: boolean = false;//for checking the course list
   audioCheck: boolean = false;//for checking the course list
   doubleLock: boolean = false;//stop double click from doing default action

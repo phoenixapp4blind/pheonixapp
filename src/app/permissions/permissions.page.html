@@ -1,0 +1,21 @@
+<ion-content>
+  <div id="container ion-justify-content-center">
+    <div class="row image">
+      <ion-card class="ion-margin-top">
+        <ion-card-content>
+          For this application to work voice permission is required.
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-margin-top">
+        <ion-card-content>
+          <ion-icon name="mic-off-outline" class="icon"></ion-icon>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="row ion-margin-top">
+      <ion-button expand="full" class="ion-margin" color="danger" (click)="getpermission()">
+        <ion-icon name="mic-circle-outline"></ion-icon>&nbsp;&nbsp;Get Permissions
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

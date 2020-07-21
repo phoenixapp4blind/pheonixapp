@@ -1,0 +1,8 @@
+{
+  "name": "phoenix",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

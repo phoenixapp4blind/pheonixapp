@@ -1,0 +1,82 @@
+ion-content {
+    --background: translucent;
+    background-color: #000000;
+  }
+  
+  .image{
+    text-align: center;
+  }
+  .blinking{
+    -webkit-animation: blink normal 2s infinite ease-in-out;
+  }
+  
+  
+  @-webkit-keyframes blink {
+    0% {
+      filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0.8)); 
+    }
+    10% {
+      filter: drop-shadow(0px 0px 2px rgba(255, 0, 0, 0.8)); 
+    }
+    20% {
+      filter: drop-shadow(0px 0px 4px rgba(255, 0, 0, 0.8));
+     }
+    30% {
+      filter: drop-shadow(0px 0px 6px rgba(255, 0, 0, 0.8)); 
+    }
+    40% {
+      filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 0.8)); 
+    }
+    50% {
+      filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.8)); 
+    }
+    60% {
+      filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 0.8));
+     }
+    70% {
+      filter: drop-shadow(0px 0px 6px rgba(255, 0, 0, 0.8)); 
+    }
+    80% {
+      filter: drop-shadow(0px 0px 4px rgba(255, 0, 0, 0.8)); 
+    }
+    90% {
+      filter: drop-shadow(0px 0px 2px rgba(255, 0, 0, 0.8)); 
+    }
+    100% {
+      filter: drop-shadow(0px 0px 0px rgba(255, 0, 0, 0.8)); 
+    }
+  }
+  
+  .shadowfilter {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 0.8));
+     filter: drop-shadow(0px 0px 8px rgba(255, 0, 0, 0.8));
+  }
+
+.wave {
+    opacity: .4;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    background: rgb(80, 160, 252);
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+    animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: rgb(226, 26, 26);
+}
+
+@keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
